@@ -1,0 +1,299 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9edef;
+    color: #111b21;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.whatsapp {
+    display: flex;
+    height: 100vh;
+    max-width: 1600px;
+    margin: auto;
+    background: white;
+}
+
+.sidebar {
+    width: 380px;
+    min-width: 300px;
+    border-right: 1px solid #d1d7db;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo-contatos,
+.topo-chat {
+    height: 65px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f0f2f5;
+}
+
+.topo-contatos {
+    justify-content: space-between;
+}
+
+.avatar-perfil,
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #00a884;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.avatar-perfil {
+    background: #d9fdd3;
+    color: #075e54;
+}
+
+.acoes {
+    display: flex;
+    gap: 18px;
+}
+
+.acoes button,
+.campo-mensagem button {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: #54656f;
+}
+
+.pesquisa {
+    padding: 10px;
+    background: white;
+}
+
+.pesquisa input {
+    width: 100%;
+    padding: 11px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #f0f2f5;
+    outline: none;
+}
+
+.filtros {
+    display: flex;
+    gap: 8px;
+    padding: 0 10px 10px;
+    overflow-x: auto;
+}
+
+.filtros button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background: #f0f2f5;
+    color: #54656f;
+    white-space: nowrap;
+}
+
+.filtros .ativo {
+    background: #d9fdd3;
+    color: #075e54;
+}
+
+.lista-contatos {
+    overflow-y: auto;
+}
+
+.contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: none;
+    border-top: 1px solid #f0f2f5;
+    background: white;
+    text-align: left;
+}
+
+.contato:hover,
+.contato.selecionado {
+    background: #f0f2f5;
+}
+
+.info-contato {
+    flex: 1;
+    min-width: 0;
+}
+
+.info-contato strong {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info-contato p {
+    color: #667781;
+    font-size: 14px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.horario {
+    color: #667781;
+    font-size: 11px;
+    align-self: flex-start;
+}
+
+.avatar-roxo {
+    background: #8064a2;
+}
+
+.avatar-laranja {
+    background: #d98b42;
+}
+
+.avatar-rosa {
+    background: #d96b91;
+}
+
+.painel-chat {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background: #efeae2;
+}
+
+.topo-chat {
+    background: #f0f2f5;
+    border-bottom: 1px solid #d1d7db;
+}
+
+.topo-chat strong {
+    font-weight: 500;
+}
+
+.status {
+    color: #667781;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.mensagens {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    background-color: #efeae2;
+    background-image: radial-gradient(#ded8cf 0.6px, transparent 0.6px);
+    background-size: 18px 18px;
+}
+
+.aviso {
+    align-self: center;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fff3c4;
+    color: #6b5d34;
+    font-size: 12px;
+    text-align: center;
+}
+
+.data {
+    align-self: center;
+    padding: 7px 12px;
+    border-radius: 8px;
+    background: #fff;
+    color: #667781;
+    font-size: 12px;
+}
+
+.mensagem {
+    max-width: 75%;
+    padding: 10px 12px 7px;
+    border-radius: 8px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+    box-shadow: 0 1px 1px #00000010;
+}
+
+.mensagem span {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #667781;
+    text-align: right;
+}
+
+.recebida {
+    align-self: flex-start;
+    background: white;
+}
+
+.enviada {
+    align-self: flex-end;
+    background: #d9fdd3;
+}
+
+.campo-mensagem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: #f0f2f5;
+}
+
+.campo-mensagem input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.campo-mensagem button:last-child {
+    color: #00a884;
+}
+
+@media (max-width: 650px) {
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .painel-chat {
+        display: none;
+    }
+
+    .whatsapp.mostrar-chat .sidebar {
+        display: none;
+    }
+
+    .whatsapp.mostrar-chat .painel-chat {
+        display: flex;
+    }
+
+    .mensagens {
+        padding: 14px;
+    }
+}

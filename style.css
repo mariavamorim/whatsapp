@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #efeae2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.header-verde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 127px;
+  background-color: #00a884;
+  z-index: 1;
+}
+
+
+.container-login {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 440px;
+  padding: 20px;
+}
+
+
+.card-login {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: #00a884;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+
+.nome-usuario {
+  font-size: 20px;
+  color: #111b21;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.instrucao {
+  font-size: 13px;
+  color: #667781;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+
+.campo {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.campo input {
+  width: 100%;
+  padding: 8px 4px;
+  border: none;
+  border-bottom: 2px solid #00a884;
+  outline: none;
+  font-size: 14px;
+  color: #111b21;
+  background: transparent;
+}
+
+.campo input::placeholder {
+  color: #8696a0;
+}
+
+
+.campo-senha {
+  display: flex;
+  align-items: center;
+}
+
+.btn-olho {
+  position: absolute;
+  right: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #8696a0;
+}
+
+.btn-olho:hover {
+  color: #00a884;
+}
+
+
+.btn-desbloquear {
+  width: 100%;
+  background-color: #00a884;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  transition: background-color 0.2s;
+}
+
+.btn-desbloquear:hover {
+  background-color: #008f6f;
+}
+
+
+.link-esqueceu {
+  display: block;
+  color: #00a884;
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.link-esqueceu:hover {
+  text-decoration: underline;
+}
+
+.subtexto {
+  font-size: 12px;
+  color: #8696a0;
+  line-height: 1.3;
+}
+
+.campo-telefone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #00a884;
+  padding-bottom: 2px;
+}
+
+
+.campo-telefone input {
+  border-bottom: none;
+  padding-left: 0;
+}
+
+
+.prefixo-pais {
+  font-size: 15px;
+  color: #111b21;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  user-select: none;
+}

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp - Conversas</title>
+    <link rel="stylesheet" href="conversas.css">
+</head>
+<body>
+
+    <main class="whatsapp">
+
+        <aside class="sidebar">
+            <header class="topo-contatos">
+                <div class="avatar-perfil">U</div>
+                <div class="acoes">
+                    <button title="Nova conversa">✎</button>
+                    <button title="Mais opções">⋮</button>
+                </div>
+            </header>
+
+            <div class="pesquisa">
+                <input type="text" id="pesquisa"
+                    placeholder="🔍  Pesquisar ou começar uma nova conversa">
+            </div>
+
+            <div class="filtros">
+                <button class="ativo">Todas</button>
+                <button>Não lidas</button>
+                <button>Favoritas</button>
+                <button>Grupos</button>
+            </div>
+
+         <section class="lista-contatos" id="lista-contatos">
+    <p style="padding: 20px; color: #667781;">
+        Carregando contatos...
+    </p>
+</section>
+ </aside>      
+
+        <section class="painel-chat">
+            <header class="topo-chat">
+
+               <div class="avatar" id="avatar-chat">?</div>
+<strong id="nome-chat">WhatsApp</strong>
+<p class="status">Selecione um contato</p>
+                </div>
+            </header>
+
+          
+<div class="mensagens" id="mensagens">
+    <div class="aviso">
+        Selecione um contato para começar uma conversa.
+    </div>
+</div>
+
+<form class="campo-mensagem" id="form-mensagem">
+    <button type="button" title="Emoji">☺</button>
+
+    <input
+        type="text"
+        id="texto-mensagem"
+        placeholder="Digite uma mensagem"
+        autocomplete="off"
+        required
+    >
+
+    <button type="submit" title="Enviar">➤</button>
+</form>
+</section>
+</main>
+
+<script src="js/conversas.js"></script>
+</body>
+</html>
